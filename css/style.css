@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: 500px;
+  align-items: center;
+  width: 100%;
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  gap: 10px;
+}
+
+.item {
+  background-color: #09f;
+  border: 1px solid #333;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100px;
+
+  &:hover {
+    /* hover permite dar estilos distintos al elemento cuando se pasa el cursor por encima */
+    background-color: #0cf;
+    cursor: pointer;
+    /* order: -1; */
+    /* flex-grow: 1; */
+    align-self: flex-end;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
